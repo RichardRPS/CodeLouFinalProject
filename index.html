@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+    
+    <!--This is the head area for the title tab and links to css stylesheet, viewport control, and if necessary char-set cleanup -->
+  <head>
+    <title>The Camino Trip 2018</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+    
+    <body>
+        
+    <!--This is the header area for my banner to the web page and the nav buttons.  Of course the styling is on the linked css sheet -->
+
+        <div id="page">  
+            <header id="header">
+                <h1 id="logo">The Camino de Santiago 2018</h1>         
+                <nav>
+                        <ul id="nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="hikers.html">Hikers</a></li>
+                            <li><a href="destinations.html">Destinations</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                        </ul>
+                </nav>                                            
+            </header>
+            
+    <!--This is a stray javascript buttonto meet the project requirement. I might look better someplace else on the page but it ended up here. The idea is to type in a color and the banner changes color.  I thought this was a good example for changing the DOM  -->
+                 
+                
+                <input type="text" id="text">
+                <button id="jsbutton">Type new header color</button>               
+    <!--This is just text content-->
+            
+        <div id="content">
+            
+            <div class="article">
+                
+                <p>The Camino de Santiago is one of the most famous treks in the world.  Thousands of hikers (called Perigrinos) walk the entire 500 mile trek on the French Way every year. This trip will be one experience to remember the rest of your life. If you cannot do the entire trip this year, then some time in the years to come you will definitely return to do so!</p>          
+                
+                          
+                <p>The Louisville Presbyterian Seminary will be hosting a trip for Perigrinos in June of 2018.  The limit of registrants will be 20.  You should be in resonably good shape to make the 80k successfully. Come join us!</p>
+            </div>
+        </div>
+                
+        <div id="invite">
+             
+             <h3 id="10-day">The 12 day trip is just $3,000.00</h3> 
+             
+        </div>
+             
+        
+            <p>Just fill out your name and e-mail address and we will send you the information</p>
+            
+        
+     <!--This is where visitors will send their name and email address to the back end database to be collected.  The callback will ultimately include a document with more specifics about the trip -->   
+            
+            <div id="signup"> 
+                
+                <form action="index.html" method="post">
+
+                <label>Name:<input type="text" id="name" name="user_name"></label>
+
+                <label>E-mail: <input type="email" id="mail" name="user_email"></label>
+
+                <button type="submit"   value="Submit">Submit</button>
+                </form>
+            </div> 
+            
+     <!-- This is just a table showing the towns that will be visited and the distances that will be hiked between towns, accomodations, food, etc -->           
+        <div id="table">
+            
+        <table id="destinations_table">
+        <thead>
+          <tr>
+            <th>Towns</th>
+            <th>Distance</th>
+            <th>Accomodations</th>
+            <th>Food</th>
+            <th>Highlights</th>
+          </tr>
+        </thead>
+        <tr>
+          <td>
+            <strong>Sarria</strong>
+          </td>
+          <td>
+            Start
+          </td>
+          <td>
+            Hotel
+          </td>
+          <td>
+            Everything
+          </td>
+          <td>
+            River, Store
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <strong>Portomarine</strong>
+          </td>
+          <td>
+            22k
+          </td>
+          <td>
+            Hotel
+          </td>
+          <td>
+            Pulpa
+          </td>
+          <td>
+            River
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <strong>Palais de Rea</strong>
+          </td>
+          <td>
+            24k
+          </td>
+          <td>
+            Hotel
+          </td>
+          <td>
+            Fish
+          </td>
+          <td>
+            Pulparia
+          </td>
+        </tr>
+          <tr>
+          <td>
+            <strong>Melide</strong>
+          </td>
+          <td>
+            15k
+          </td>
+          <td>
+            Hotel
+          </td>
+          <td>
+            Everything
+          </td>
+          <td>
+            Lavanderia
+          </td>
+        </tr>
+          <tr>
+          <td>
+            <strong>Arzua</strong>
+          </td>
+          <td>
+            13k
+          </td>
+          <td>
+            Hotel
+          </td>
+          <td>
+            Everything
+          </td>
+          <td>
+            Travelers
+          </td>
+        </tr>
+          <tr>
+          <td>
+            <strong>Amenal</strong>
+          </td>
+          <td>
+            23k
+          </td>
+          <td>
+            Hotel
+          </td>
+          <td>
+            Bar Food
+          </td>
+          <td>
+            Perigrinos
+          </td>
+        </tr>
+          <tr>
+          <td>
+            <strong>Santiago</strong>
+          </td>
+          <td>
+            16k
+          </td>
+          <td>
+            Hotel
+          </td>
+          <td>
+            Everything
+          </td>
+          <td>
+            Catherdal
+          </td>
+        </tr>
+      </table>
+      
+    </div>
+            
+    <!--This was just an excuse to add a footer with some pictures that will be added to when I find some more-->        
+                                    
+    <div id="footer">                
+        <img class="image" src="images/spearHiker.png">
+        <img class="image" src="images/images.png">
+        <img class="image" src="images/images.jpg">
+        
+        <p class="copyright">&copy 2017 Richard P. Schiller</p>       
+    </div>
+          
+        
+    </div>             
+    
+                       
+        <script type="text/javascript" src="javascript.js"></script>                              
+    </body>
+ </html>

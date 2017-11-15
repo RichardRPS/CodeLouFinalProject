@@ -1,0 +1,191 @@
+/***************
+Main
+***************/
+p {
+    
+}
+/******************************************
+BANNER styling for the banner I called Logo
+*******************************************/
+#logo {
+    display: block;
+    font-size: 20px;
+    width: 100%;
+    background-color: green;
+    font-size: 70px;
+    text-align: center;
+    border-style: solid; 
+    border-width: 5px;
+}
+ 
+/***************************************************************************
+Page Styles for the body and all buttons.  The camino color motif is green, orange and blue so I tried to keep that for the page.
+***************************************************************************/
+
+body {   
+    
+    margin: 0;
+    font-family: verdana, sans-serif;
+    font-size: 1.25em;
+    background: #eac657;
+}
+
+button {
+    background-color: cornflowerblue;
+    color: yellow;
+    border-radius: .5em;
+    border: 0;
+    padding: .8em;
+    
+    
+}
+
+#page {    
+    width: 80%;
+    margin: 0 auto; 
+    
+}
+
+/*************************
+NAVIGATION button styling.  
+*************************/
+
+#nav {
+    font-size: 1em;
+    display: block;
+    text-align: center;
+    width: 100%;
+    list-style: none;
+    margin: 0 auto;
+}
+
+#nav a {
+    font-size: 1em;
+    padding: .50em;
+}
+
+
+li {
+    display: inline;
+}
+
+
+a {
+   
+    font-size: 1.4em;
+    font-weight: bold;
+    padding: 3px;
+    background: green;
+    color: #eac657; 
+    text-decoration:none;
+    border-radius: 10px;
+}
+
+a:hover, a:focus {
+    color: #d2b14e;
+    background: #000;
+}
+
+</style>
+
+p {
+    float: left;
+    
+}
+/************************
+SIGN UP area form styling
+*************************/
+
+#signup form {
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+}
+
+/*******************
+Content area styling
+********************/
+
+#content {
+    display: block;
+    margin: 20px auto;
+}
+.article {
+    margin: 0 auto;
+}
+
+/***************
+TABLE
+****************/
+
+#compare {
+    float: left;
+    font-weight: bold;
+}
+
+#destinations_table {
+    float: left;
+    width: 100%;
+    font-size: 1.2em;
+}
+
+#destinations-table thead{
+    background: gray;
+    color: #EEE;
+    text-align: left;
+}
+
+#destinations_table th, #product_tabe td {
+    padding: 10px;
+}
+
+#destinations_table td {
+    background: #d2b14e;
+    color: #333;
+}
+
+
+/***************
+Footer
+****************/
+
+#footer {
+    margin: 0 auto;
+    text-align: center;
+}
+.image {
+    
+    width: 100px;
+    height: 100px;
+}
+
+.copyright {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    font-size: 1em;
+    padding: 1em;
+    background-color: coral;
+}
+
+/********************************************
+Media Queries - Responsive and mobile display
+*********************************************/
+
+@media (max-width: 700px) {
+    #nav {
+    display: flex;
+    flex-direction: column;
+  
+    }
+    
+    #nav li {
+        margin: 10px;
+        padding: 5px;
+
+}
+    
+}
+	
