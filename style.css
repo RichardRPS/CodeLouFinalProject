@@ -17,6 +17,11 @@ BANNER styling for the banner I called Logo
     border-style: solid; 
     border-width: 5px;
 }
+
+header {
+    
+    min-width: fit-content;
+}
  
 /***************************************************************************
 Page Styles for the body and all buttons.  The camino color motif is green, orange and blue so I tried to keep that for the page.
@@ -184,8 +189,12 @@ Media Queries - Responsive and mobile display
     #nav li {
         margin: 10px;
         padding: 5px;
-
-}
-    
+    }
+    table, td, th {
+        font-size: 10px;
+    }
+    #page {
+        width: 95%; 
+    }
 }
 	
